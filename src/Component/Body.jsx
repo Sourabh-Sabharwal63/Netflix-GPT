@@ -5,7 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Signup from './Signup'
 
 
+
 const Body = () => {
+ 
   const appRouter=createBrowserRouter([
     {
       path:"/",
