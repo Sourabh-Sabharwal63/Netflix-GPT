@@ -6,3 +6,4 @@ export const options = {
   }
 };
 
+export const PosterUrl=`https://image.tmdb.org/t/p/original//`;
