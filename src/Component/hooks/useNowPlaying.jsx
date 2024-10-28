@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { options } from "../utils/constant";
 import { useDispatch } from "react-redux";
-import { addPlayingMovies } from "../utils/moviesSlice";
+import { addPlayingMovies } from "../utils/Redux/moviesSlice";
 const useNowPlaying = () => {
   const dispatch = useDispatch();
   const [apiData, setApiData] = useState(null);
@@ -10,7 +10,6 @@ const useNowPlaying = () => {
       "https://api.themoviedb.org/3/movie/now_playing?page=1",
       options
     );
-
     setApiData(await (data.json()));
   };
 

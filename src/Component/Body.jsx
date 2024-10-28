@@ -3,6 +3,7 @@ import Login from './Login'
 import Browse from './Browse'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Signup from './Signup'
+import Header from './Header'
 
 
 
@@ -25,6 +26,7 @@ const Body = () => {
   ])
   return (
     <div>
+        <Header />
       <RouterProvider router={appRouter}/>
     </div>
   )

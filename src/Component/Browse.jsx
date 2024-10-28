@@ -1,24 +1,19 @@
-import React from "react";
-import { useSelector } from "react-redux";
-
-
+import React, { useEffect } from "react";
 import useNowPlaying from "./hooks/useNowPlaying";
-
+import MainContainer from "./MainContainer";
+import useMovieImage from "./hooks/useMovieImage";
+import SecondaryContainer from "./SecondaryContainer";
+import { useSelector } from "react-redux";
 const Browse = () => {
   useNowPlaying();
-  const MOVIESlist=useSelector((store)=>store.movies.nowPlayingMovies);
-  if(MOVIESlist===null){
-     return <div>Loading....</div>;
-  }
-  else{
-    return(
-      <div>
-        {MOVIESlist.map((mov)=>{return (<div><p>{mov?.title}</p><br/></div>)})}
-        
-      </div>
-    )
-  }
- 
+  const movies = useSelector((store) => store.movies?.nowPlayingMovies);
+  useEffect(() => {}, [movies]);
+  if (!movies) return <div>Loading...</div>;
+  return (
+    <div>
+      <MainContainer />
+    </div>
+  );
 };
 
 export default Browse;
