@@ -1,9 +1,11 @@
 import  { useEffect, useState } from "react";
 import { options } from "../utils/constant";
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import {addTopRatedSer } from "../utils/Redux/moviesSlice";
 const useTopRatedSer = () => {
   const dispatch = useDispatch();
+  const data_Slice=useSelector(store=>store?.movies?.TopRatedSer);
   const [apiData, setApiData] = useState(null);
   const getMovieList = async () => {
     const data = await fetch(
@@ -14,7 +16,7 @@ const useTopRatedSer = () => {
   };
 
   useEffect(() => {
-    getMovieList();
+    !data_Slice && getMovieList();
   }, []);
 
   if (apiData) {
