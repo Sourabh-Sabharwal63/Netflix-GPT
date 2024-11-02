@@ -9,7 +9,7 @@ const SecondaryContainer = () => {
   const TopRatedSer=useSelector((store) => store?.movies?.TopRatedSer);
   const AiringToday=useSelector((store) => store?.movies?.AiringToday);
   return (
-    <div className='bg-black'>
+    <div className='bg-black py-12 md:py-0'>
       <MovieList title={"NowPlaying"} movies={movies}/>
       <MovieList title={"Popular"} movies={PopularMovies}/>
       <MovieList title={"Top Rated"} movies={TopRatedMovies}/>

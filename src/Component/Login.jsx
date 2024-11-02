@@ -19,23 +19,21 @@ const Login = () => {
       false
     );
     seterrorMessage(message);
-    console.log("message = ", message);
-    console.log("email = ", email.current.value);
-    console.log("password = ", password.current.value);
-   
+    
   };
   return (
     <div>
      
-      <div className="absolute">
-      <img
+      <div className="fixed">
+      <img className="h-screen object-cover md:h-auto"
           src={BgImage}
           alt="bg-img"
         />
       </div>
+      
       <form
         onSubmit={(e) => e.preventDefault()}
-        className=" w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 flex flex-col bg-opacity-80"
+        className=" md:w-3/12 absolute p-12 bg-black md:my-36 mx-auto right-0 left-0 flex flex-col bg-opacity-80"
       >
         <h1 className="text-white  text-3xl font-extrabold p-2 ">Sign In</h1>
         <input
