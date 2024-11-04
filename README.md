@@ -14,20 +14,21 @@
 
 
 
-#Features
--Login/Sign up form
-   -Sign in / Sign up form
-   -restricted to browser page
--Browser (after authentication)
-  -Header
-  -Main Movie
-    -Title & description
-    -Trailer in background
-    -Movies Suggestions
-       -MoviesList 
--TMDB_Search
-   -Search bar
-   -Movies suggestions
+#Features  
+-Login/Sign up form.  
+   -Sign in / Sign up form.  
+   -restricted to browser page.  
+-Browser (after authentication).  
+  -Header.  
+  -Main Movie.  
+    -Title & description.  
+    -Movie Poster.  
+    -Trailer in background.  
+    -Movies Suggestions.  
+       -MoviesList   
+-TMDB_Search  
+   -Search bar  
+   -Movies suggestions  
    
 
 
