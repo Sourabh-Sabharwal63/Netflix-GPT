@@ -33,7 +33,7 @@ const Login = () => {
       
       <form
         onSubmit={(e) => e.preventDefault()}
-        className=" md:w-3/12 absolute p-12 bg-black md:my-36 mx-auto right-0 left-0 flex flex-col bg-opacity-80"
+        className=" md:w-3/12 sm:w-3/4  absolute p-12 bg-black md:my-36 mx-auto right-0 left-0 flex flex-col bg-opacity-80"
       >
         <h1 className="text-white  text-3xl font-extrabold p-2 ">Sign In</h1>
         <input

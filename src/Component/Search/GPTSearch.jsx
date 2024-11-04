@@ -1,7 +1,7 @@
 import React from "react";
 import GPT_SearchBar from "./GPT_SearchBar";
 import GPT_MovieSuggestion from "./GPT_MovieSuggestion";
-import { BgImage } from "./utils/constant";
+import { BgImage } from "../utils/constant";
 
 const GPTSearch = () => {
   return (
@@ -13,6 +13,7 @@ const GPTSearch = () => {
       
       <div className="pt-[50%] md:p-0">
         <GPT_SearchBar />
+        <GPT_MovieSuggestion/>
         
       </div>
     </div>

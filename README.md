@@ -1,5 +1,19 @@
 # Getting Started with Create React App
 
+#HomePage
+![alt text](<screenshots/Screenshot 2024-11-04 213437.png>)
+ 
+ -Recommendations
+ ![alt text](<screenshots/Screenshot 2024-11-04 213557.png>)
+
+#SearchPage
+![alt text](<screenshots/Screenshot 2024-11-04 213640.png>)
+
+-Search_Results
+![alt text](<screenshots/Screenshot 2024-11-04 213722.png>)
+
+
+
 #Features
 -Login/Sign up form
    -Sign in / Sign up form
@@ -7,11 +21,11 @@
 -Browser (after authentication)
   -Header
   -Main Movie
-    -Trailer in background
     -Title & description
+    -Trailer in background
     -Movies Suggestions
        -MoviesList 
--Netflix-GPT
+-TMDB_Search
    -Search bar
    -Movies suggestions
    

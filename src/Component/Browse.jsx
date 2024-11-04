@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import useNowPlaying from "./hooks/useNowPlaying";
-import MainContainer from "./MainContainer";
+import MainContainer from "./MainPage/MainContainer";
 import { useSelector } from "react-redux";
 import usePopular from "./hooks/usePopular";
 import useTopRated from "./hooks/useTopRated";
 import useTopRatedSer from "./hooks/useTopRatedSerise";
 import useAiringToday from "./hooks/useAiringToday";
-import GPTSearch from "./GPTSearch";
+import GPTSearch from "./Search/GPTSearch";
 
 const Browse = () => {
   useNowPlaying();
