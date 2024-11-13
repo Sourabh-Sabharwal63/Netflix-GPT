@@ -10,10 +10,7 @@ const Signup = () => {
   const handleformSubmit = () => {
     const message = validatedata(email.current.value, password.current.value,repassword.current.value,true);
     seterrorMessage(message);
-    console.log("message = ",message);
-    console.log("email = ",email.current.value);
-    console.log("password = ",password.current.value);
-    console.log("repassword = ",repassword.current.value);
+    
   };
   return (
     <div>
