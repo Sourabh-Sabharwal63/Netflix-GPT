@@ -37,6 +37,10 @@
 
 
 
+ #Obtain an API_key from TMDB Api.
+ -Create a .env file in the root directory and add your API key:
+
+
 
 
 
