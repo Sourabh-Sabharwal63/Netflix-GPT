@@ -2,6 +2,7 @@ import React from 'react'
 import { PosterUrl } from '../utils/constant'
 
 const MovieCard = ({poster_path}) => {
+ 
   const poster=PosterUrl+poster_path;
     if(poster_path) return (
     <div className='w-28 md:w-48 pr-4 '>

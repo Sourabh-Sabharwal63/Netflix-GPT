@@ -14,13 +14,13 @@ const Browse = () => {
   useTopRated();
   useTopRatedSer();
   useAiringToday();
-  const GPT_Flag=useSelector(store=>store?.GPTSlice.pageStatus);
+  const GPT_Flag = useSelector((store) => store?.GPTSlice.pageStatus);
   const movies = useSelector((store) => store.movies?.nowPlayingMovies);
   const PopularMovies = useSelector((store) => store?.movies?.PopularMovies);
   const TopRatedMovies = useSelector((store) => store?.movies?.TopRated);
   const TopRatedSeries = useSelector((store) => store?.movies?.TopRatedSer);
   const AiringToday = useSelector((store) => store?.movies?.AiringToday);
-  useEffect(() => {}, [movies, PopularMovies, TopRatedMovies, TopRatedSeries]);
+   
   if (
     !movies ||
     !PopularMovies ||
@@ -28,9 +28,9 @@ const Browse = () => {
     !TopRatedSeries ||
     !AiringToday
   )
-  return <div>Loading...</div>;
+    return <div>Loading...</div>;
 
-  if(GPT_Flag) return( <GPTSearch/>)
+  if (GPT_Flag) return <GPTSearch />;
   
   return (
     <div>
